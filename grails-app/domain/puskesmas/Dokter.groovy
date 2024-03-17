@@ -5,6 +5,7 @@ class Dokter {
     String spesialis
     String alamat
     String nomorTelepon
+    JenisKelamin jenisKelamin
 
 
     static hasMany = [rekamMedis: RekamMedis]
