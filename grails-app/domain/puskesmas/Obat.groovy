@@ -3,6 +3,7 @@ package puskesmas
 class Obat {
     String namaObat
     String keterangan
+    Integer hargaObat
     Integer stok
     JenisObat jenisObat
 

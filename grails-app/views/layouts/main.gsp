@@ -9,38 +9,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 
-    <%-- <asset:stylesheet src="application.css"/> --%>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <asset:stylesheet src="application.css"/>
+    <%-- boostrap --%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <asset:stylesheet src="style.css"/>
     <g:layoutHead/>
 </head>
 
 <body>
+<nav class="py-4 navbar navbar-expand-lg bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">E-Rumah Sakit</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Menghapus kelas ml-auto -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/dokter">Dokter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/obat">Obat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pasien">Pasien</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/poliklinik">Poliklinik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rekamMedis">Rekam Medis</a>
+                </li>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
+
 
 <g:layoutBody/>
 

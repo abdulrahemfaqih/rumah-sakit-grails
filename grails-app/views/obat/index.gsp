@@ -3,6 +3,7 @@
     <head>
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'obat.label', default: 'Obat')}" />
+        <%-- <g:set var="JenisObat" value="${message(code: 'jenisObat.label', default: 'JenisObat')}" /> --%>
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
@@ -14,6 +15,7 @@
                     <ul>
                         <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
                         <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+                        <li><a class="create" href="${createLink(uri: '../jenisObat/create')}"><g:message code="tambah jenis obat"/></a></li>
                     </ul>
                 </div>
             </section>

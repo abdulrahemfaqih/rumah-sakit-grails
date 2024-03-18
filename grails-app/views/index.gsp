@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>E-Rumah Sakit</title>
 </head>
 <body>
-<content tag="nav">
+<%-- <content tag="nav">
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -41,37 +41,47 @@
             </g:each>
         </ul>
     </li>
-</content>
+</content> --%>
 
-<%-- <div class="svg" role="presentation">
-    <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-    </div>
-</div> --%>
+
 
 <div id="content" role="main">
+  
     <div class="container">
-        <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
-
-            <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
-            </p>
-
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-white" style="background-color: #00C0EF">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Dokter</h5>
+                        <h6>100</h6>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="col-md-3">
+                <div class="card text-white" style="background-color: #00a65a">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Pasien</h5>
+                        <h6>120</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white" style="background-color: #f39c12">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Obat</h5>
+                        <h6>300</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white" style="background-color: #d9534f">
+                    <div class="card-body">
+                        <h5 class="card-title">Jumlah Poliklinik</h5>
+                          <h6>300</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
