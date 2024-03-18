@@ -5,6 +5,7 @@ class JenisObat {
 
     static hasMany = [obat: Obat]
     static constraints = {
+        obat display:false
     }
 
     String toString() {

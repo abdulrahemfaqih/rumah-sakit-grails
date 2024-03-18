@@ -10,6 +10,7 @@ class Pasien {
     static hasMany = [rekamMedis: RekamMedis]
     static belongsTo = [jenisKelamin: JenisKelamin]
     static constraints = {
+        rekamMedis display:false
     }
 
     String toString() {

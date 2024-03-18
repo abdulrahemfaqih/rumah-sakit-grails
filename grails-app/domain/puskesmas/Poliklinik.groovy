@@ -5,7 +5,9 @@ class Poliklinik {
     String gedung
 
     static hasMany = [rekamMedis: RekamMedis]
-    static constraints = {}
+    static constraints = {
+        rekamMedis display:false
+    }
 
     String toString() {
         return namaPoli

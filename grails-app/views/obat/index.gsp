@@ -14,8 +14,8 @@
                 <div class="nav" role="navigation">
                     <ul>
                         <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                        <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-                        <li><a class="create" href="${createLink(uri: '../jenisObat/create')}"><g:message code="tambah jenis obat"/></a></li>
+                        <li><g:link class="create" action="create"><g:message code="Tambah Obat" args="[entityName]" /></g:link></li>
+                        <li><a class="create" href="${createLink(uri: '../jenisObat/create')}"><g:message code="Tambah Jenis Obat"/></a></li>
                     </ul>
                 </div>
             </section>
