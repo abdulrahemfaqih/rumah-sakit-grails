@@ -31,7 +31,7 @@
                     </ul>
                     </g:hasErrors>
                     <g:form resource="${this.jenisKelamin}" method="POST">
-                        <fieldset class="form">
+                        <fieldset class="form pb-3">
                             <f:all bean="jenisKelamin"/>
                         </fieldset>
                         <fieldset class="buttons">
